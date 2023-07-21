@@ -7,9 +7,7 @@ const cors=require('cors');
 const dotenv=require('dotenv');
 
 dotenv.config();
-app.use(cors({
-  origin:["https://todobackend-aliabbas34.onrender.com/","https://todofrontend-aliabbas34.vercel.app/"]
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 const todoSchema=new mongoose.Schema({
