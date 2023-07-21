@@ -8,7 +8,7 @@ const dotenv=require('dotenv');
 
 dotenv.config();
 app.use(cors({
-  origin:["http://localhost:3000","http://localhost:5173"]
+  origin:["http://localhost:3000","https://todofrontend-aliabbas34.vercel.app/"]
 }));
 app.use(bodyParser.json());
 
